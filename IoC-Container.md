@@ -17,17 +17,13 @@
 
 - BeanDefinationReader 用 ResourceLoader 中读取 Bean 定义 
 
-# Bean 工厂
+## Bean 工厂
 
 - BeanFactory 负责获取 Bean，入口是 refresh
 - ApplicationContext 增强了 BeanFactory，提供资源加载等功能
 - AbstractApplicationContext 继承子 ApplicationContext，定义了加载 Bean 的流程
 
-
-## 抽象类
-
-
-## 读取 Bean，创建 Bean 工厂
+## 读取 BeanDefinition 流程
 
 - ResourceLoader 生成 Resource
-- BeanDefinationReader 利用 ResourceLoader 加载 Bean
+- BeanDefinationReader 利用 ResourceLoader 加载 BeanDefinition
